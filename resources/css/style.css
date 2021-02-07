@@ -81,6 +81,7 @@ h1 > span{
 /*------------------LINKS-----------------*/
 a:link,
 a:visited{
+    font-weight: 300;
     text-decoration: none;
     color: #fff;
     font-size: 90%;
@@ -88,15 +89,10 @@ a:visited{
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     -o-transition: border-bottom 0.2s;
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    -o-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s;
 }
 a:hover,
-a:active{
-    border-bottom: 2px solid #8FC7FF;
-    color: #8FC7FF;
-}
+a:active{ border-bottom: 2px solid #8FC7FF; }
 
 
 /*---------------HEADERS--------------------*/
