@@ -27,9 +27,13 @@ html,body{
 .row{
     max-width: 1140px;
     margin: 0 auto;
-    
 }
-
+section{
+    margin: 60px 0;
+}
+.col{
+    padding:0 1% ;
+}
 
 /*---------------HEADER---------------*/
 
@@ -40,6 +44,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
     color: #fff;
     position: relative;
@@ -95,15 +100,64 @@ a:hover,
 a:active{ border-bottom: 2px solid #8FC7FF; }
 
 
-/*---------------HEADERS--------------------*/
-h1{
-    text-transform: uppercase;
-    font-size: 250%;
+/*---------------PARAGRAPHS--------------------*/
+
+p{
     font-weight: 300;
-    letter-spacing: 2px;
-    word-spacing: 4px;
+}
+
+.p-offer{
+    font-size: 110%;
+    font-weight: 300;
+    width: 70%;
+    margin: 10px auto 20px auto;
+    text-align: center;
+}
+
+
+
+/*---------------HEADERS--------------------*/
+h1,
+h2,
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
     line-height: 135%;
 }
+h1{
+    font-size: 250%;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+h2{
+    font-size: 200%;
+    word-spacing: 3px;
+    margin:30px 0;
+    text-align: center;
+}
+h2::after{
+    display: block;
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: #5282B3;
+    margin: 0 auto;
+    margin-top: 30px;  
+}
+h3{
+    font-size: 120%;
+    line-height: 125%;
+    margin-bottom: 15px;
+}
+
+/*---------------ICONS--------------------*/
+.icon-big{
+    display: inline-block;
+    font-size: 330%;
+    color: #8FC7FF;
+    margin: 25px 0 10px 0;
+}
+
 
 /*---------------BUTTONS--------------------*/
 
