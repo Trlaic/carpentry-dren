@@ -4,6 +4,7 @@
 #5282B3 - ljubicasta ----- #45719e dve nijanse tamnija za dugmice
 #B38940 - tvrdja braon
 #FFD68F - oker
+rgb(240, 240, 240) - pozadina za svaku drugu sekciju
 */
 
 
@@ -20,7 +21,7 @@ html,body{
     font-size: 20px;
     font-family: 'Lato', sans-serif;
 }
-
+html{scroll-behavior: smooth;}
 
 /*--------------REUSABLE---------------*/
 
@@ -29,10 +30,15 @@ html,body{
     margin: 0 auto;
 }
 section{
-    margin: 60px 0;
+    padding: 60px 0;
 }
 .col{
     padding:0 1% ;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /*---------------HEADER---------------*/
@@ -193,4 +199,98 @@ h3{
 .btn-ghost:active{
     color: #fff;
     background-color: #45719e;
+}
+
+
+
+/*---------------SECTION-IMG-GRID--------------------*/
+.section-grid-images{
+    padding: 0;
+}
+.imgs-wrapper{
+    width: 100%;
+    height: auto;
+}
+.imgs-wrapper .col{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+.img-wrapper{
+    width: 100%;
+    overflow:hidden;
+    background-color: black;
+    margin: 0;
+}
+.imgs-wrapper img{
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.20);
+        -ms-transform: scale(1.20);
+            transform: scale(1.20);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    -o-transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+.img-wrapper:hover img{
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+    opacity: 1;
+}
+
+
+/*---------------SECTION-WORKS--------------------*/
+
+.section-works{
+    background-color: rgb(240, 240, 240);
+}
+.works-step1{
+    text-align: right;
+}
+
+.logo-2{
+    width: 90%;
+    margin-left: 30%;
+    margin-top: 7px;
+}
+
+.works-seclusion{
+    margin-left: 5%;   
+    margin-bottom: 50px;
+}
+.works-seclusion:first-child{
+    margin-top: 45px;
+}
+.works-seclusion:last-of-type{
+    margin-bottom: 60px;
+}
+.rounded-number{
+    float: left;
+    margin-right: 30px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding-top: 6px;
+    padding-right: 1.5px;
+    color: #5282B3;
+    border: 2px solid #5282B3;
+    border-radius:50% ;
+    font-size: 150%;
+    font-weight: 300;
+}
+.btn-app{
+    margin-left: 28px;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+}
+.btn-app:first-child{margin-right: 10px;}
+.btn-app:link,
+.btn-app:visited {
+    border: none;
 }
