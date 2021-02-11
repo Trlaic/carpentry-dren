@@ -76,6 +76,22 @@ header nav{
 .basic-nav li:last-child{
     margin-right: 0;
 }
+.basic-nav a:link,
+.basic-nav a:visited{
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    font-size: 90%;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+.basic-nav a:hover,
+.basic-nav a:active{ border-bottom: 2px solid #8FC7FF; }
+
+
 .hero-image{
     position: absolute;
     top: 50%;
@@ -92,18 +108,19 @@ h1 > span{
 /*------------------LINKS-----------------*/
 a:link,
 a:visited{
-    font-weight: 300;
+    color: #5282B3;
+    font-weight: 400;
     text-decoration: none;
-    color: #fff;
-    font-size: 90%;
-    padding: 8px 0;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.2s;
-    -o-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s;
+    font-size: 100%;
+    margin-left: 5px;
+    padding: 1.5px 0;
+    border-bottom:1px solid #5282B3;
 }
 a:hover,
-a:active{ border-bottom: 2px solid #8FC7FF; }
+a:active{
+    color: #8FC7FF;
+    border-bottom: 1px solid transparent;
+}
 
 
 /*---------------PARAGRAPHS--------------------*/
@@ -162,6 +179,17 @@ h3{
     font-size: 330%;
     color: #8FC7FF;
     margin: 25px 0 10px 0;
+}
+.icon-small{
+    display: inline-block;
+    font-size: 150%;
+    color: #45719e;
+    width: 30px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 140%;
+    vertical-align: middle;
+    margin-top: -8px;
 }
 
 
@@ -293,4 +321,18 @@ h3{
 .btn-app:link,
 .btn-app:visited {
     border: none;
+}
+
+
+/*---------------SECTION-CITIES--------------------*/
+
+.city img{
+    display: block;
+    width: 110%; /*ne treba ici preko 100%, jer moze doci do overflowa lagano, ali eto u ovom primeru*/
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.city p{
+    font-size: 99%;
 }
