@@ -438,14 +438,16 @@ cite img{
     width: 50%;
     margin: 0 auto;
 }
-input,select,textarea{
-    padding: 7px;
-}
+
 input[type=text],
 input[type=email],
 select,
 textarea{
     width: 100%;
+    padding: 7px;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0; /*formatiram cekboks za adekvatniji razmak izmedju elemenata*/
 }
 
 .section-form__separated{
@@ -453,3 +455,56 @@ textarea{
 }
 *:focus{outline: none;}
 
+/*---------------FOOTER--------------------*/
+footer{
+    background-color: rgb(41, 41, 41);
+}
+footer ul{
+    list-style-type: none;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+footer ul li{
+    display: inline-block;
+    margin-right:15px ;
+}
+.footer__list--right ul li:last-child{margin-right: 0;}
+
+.footer__list--left{
+    float: left;
+    font-size: 80%;
+}
+.footer__list--right{
+    float: right;
+    font-size: 120%;
+}
+footer a:link,
+footer a:visited{
+    color: rgb(141, 141, 141);
+    font-weight: 300;
+    margin:0;
+    padding:0;
+    border: 0;
+}
+footer a:hover,
+footer a:active{
+    color: rgb(216, 216, 216);
+}
+footer p{
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(141, 141, 141);
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+    color: #1da1f2;
+}
+.ion-social-googleplus:hover{
+    color:  #db4437;
+}
+.ion-social-instagram:hover{
+    color:  #c32aa3;
+}
