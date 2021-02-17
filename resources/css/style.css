@@ -59,7 +59,6 @@ header{
     width: 10%;
     float: left;
     margin-top: 15px;
-    
 }
 header nav{
     float: right;
@@ -105,6 +104,37 @@ header nav{
 h1 > span{
     font-weight: 400;
 }
+
+/*------------------STICKY NAVIGATION-----------------*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 13%;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+}
+.sticky .logo{
+    width: 60px;
+    margin: 3px 0;
+}
+
+.sticky .basic-nav{
+    margin: 18px;
+}
+
+.sticky .basic-nav a:link,
+.sticky .basic-nav a:visited{
+    color: rgb(68, 68, 68);
+    padding: 16.5px 0;
+}
+
+
 /*------------------LINKS-----------------*/
 a:link,
 a:visited{
